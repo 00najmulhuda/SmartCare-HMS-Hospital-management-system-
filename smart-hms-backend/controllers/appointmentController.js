@@ -29,7 +29,7 @@ exports.bookAppointment = async (req, res) => {
         "nh5037480@gmail.com",
         "000najmulhuda@gmail.com",
         "innocantr@gmail.com"
-      ]
+      ],
       subject: "New Appointment Booked",
       html: `
         <h2>New Appointment Details</h2>
