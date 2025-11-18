@@ -22,7 +22,7 @@ app.use("/api/feedback", require("./routes/feedbackRoutes"));
 // Serve frontend files
 app.use(express.static(path.join(__dirname, "public")));
 
-// For React or SPA fallback (optional, for single-page apps)
+// Catch-all route for frontend (index.html)
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
