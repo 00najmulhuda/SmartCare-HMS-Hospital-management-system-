@@ -1,4 +1,4 @@
-const Appointment = require('../models/Appointment');
+const Appointment = require('../models/appointment');
 const transporter = require('../utils/mailer');
 
 exports.getAppointments = async (req, res) => {
