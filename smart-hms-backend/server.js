@@ -20,13 +20,11 @@ app.use("/api/doctors", require("./routes/doctorRoutes"));
 app.use("/api/appointments", require("./routes/appointmentRoutes"));
 app.use("/api/feedback", require("./routes/feedbackRoutes"));
 
-// Serve frontend static files
+// Serve frontend files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Fallback route for frontend (SPA or multi-page)
-app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
+// ❌ REMOVE fallback route (this was causing errors)
+// DO NOT ADD app.get("*") or app.use("*")
 
 // Start server
 const PORT = process.env.PORT || 5000;

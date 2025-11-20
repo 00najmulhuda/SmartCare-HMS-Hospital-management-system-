@@ -1,10 +1,5 @@
-/* script.js - single shared JS for frontend pages
-   - Uses backend at http://localhost:5000
-   - Stores JWT in localStorage "token" and user in "currentUser"
-*/
-const API_BASE = 'http://localhost:5000/api';
-
-// --- small helper for API calls (sends token if exists) ---
+const API_BASE = "https://smartcare-hms-hospital-management-system.onrender.com/api";
+// - helper for API calls (sends token if exists) ---
 async function apiFetch(path, opts = {}) {
   const url = API_BASE + path;
   const headers = opts.headers || {};
