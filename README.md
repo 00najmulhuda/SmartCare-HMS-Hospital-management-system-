@@ -172,7 +172,7 @@ npm start
 
 ### Najmul Huda
 
-B.Tech Student | Full Stack Developer | Founder of MultiTech Lab
+B.Tech Student | Full Stack Developer 
 
 GitHub:
 https://github.com/00najmulhuda
